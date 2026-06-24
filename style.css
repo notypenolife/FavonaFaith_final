@@ -1,0 +1,850 @@
+/*this is for the whole website design*/
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*this is for the navigation bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li a:hover {
+  background-color: #111111;
+}
+
+
+/*these styles will be for the home page*/
+    /*this is the header*/
+.header {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.header img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.header_text {
+    position: absolute;
+    bottom: 1px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+    /*this is for the subheading*/
+nav + h1 {
+    text-align: center;
+    font-size: 50px;
+    color: cornflowerblue;
+}
+h1 + p {
+    text-align: center;
+}
+    /*this is for the sacrament container*/
+.sacrament {
+    background-color: gainsboro;
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: relative;
+    border-radius: 5px;
+    margin: 30px;
+    height: 420px;
+}
+.sacrament::-webkit-scrollbar {
+    display: none;
+}
+.sacrament::scroll-button(left) {
+    content: '<';
+    position: absolute;
+    left: 50px;
+    top: 1210px;
+    border: none;
+    background-color: gainsboro;
+    font-size: 20px;
+    color: black;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+}
+.sacrament::scroll-button(right) {
+    content: '>';
+    position: absolute;
+    right: 50px;
+    top: 1210px;
+    border: none;
+    background-color: gainsboro;
+    font-size: 20px;
+    color: black;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+}
+
+    /*this is for the favona 1st ward*/
+.ward1 {
+    flex: 1;
+    background-color: lightgray;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+} 
+.ward1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+.ward1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ward1 h3 {
+    position: absolute;
+    bottom: 120px;
+    left: 170px;
+    color: white;
+}
+.ward1 h5 {
+    position: absolute;
+    color: white;
+    bottom: 55px;
+    left: 110px;
+    text-align: center;
+    font-size: 25px;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,1);
+    opacity: 0;
+    transition: 0.3s;
+}
+.ward1:hover .overlay {
+    opacity: 1;
+}
+    /*this is for the favona 2nd ward*/
+.ward2 {
+    flex: 1;
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.ward2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+.ward2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ward2 h3 {
+    position: absolute;
+    bottom: 120px;
+    left: 120px;
+    color: white;
+}
+.ward2 h5 {
+    position: absolute;
+    color: white;
+    bottom: 55px;
+    left: 110px;
+    text-align: center;
+    font-size: 25px;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,1);
+    opacity: 0;
+    transition: 0.3s;
+}
+.ward2:hover .overlay {
+    opacity: 1;
+}
+    /*this is for penrose 1st ward*/
+.ward3 {
+    flex: 1;
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.ward3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+.ward3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ward3 h3 {
+    position: absolute;
+    bottom: 120px;
+    left: 130px;
+    color: white;
+}
+.ward3 h5 {
+    position: absolute;
+    color: white;
+    bottom: 55px;
+    left: 70px;
+    text-align: center;
+    font-size: 25px;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,1);
+    opacity: 0;
+    transition: 0.3s;
+}
+.ward3:hover .overlay {
+    opacity: 1;
+}
+    /*this is for penrose 2nd ward*/
+.ward4 {
+    flex: 1;
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.ward4::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+.ward4 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.ward4 h3 {
+    position: absolute;
+    bottom: 120px;
+    left: 110px;
+    color: white;
+}
+.ward4 h5 {
+    position: absolute;
+    color: white;
+    bottom: 55px;
+    left: 110px;
+    text-align: center;
+    font-size: 25px;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,1);
+    opacity: 0;
+    transition: 0.3s;
+}
+.ward4:hover .overlay {
+    opacity: 1;
+}
+    /*this is for waipuna ward*/
+.ward5 {
+    flex: 1;
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.ward5::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+.ward5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ward5 h3 {
+    position: absolute;
+    bottom: 120px;
+    left: 170px;
+    color: white;
+}
+.ward5 h5 {
+    position: absolute;
+    color: white;
+    bottom: 55px;
+    left: 70px;
+    text-align: center;
+    font-size: 25px;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,1);
+    opacity: 0;
+    transition: 0.3s;
+}
+.ward5:hover .overlay {
+    opacity: 1;
+}
+    /*this is for waterlea ward*/
+.ward6 {
+    flex: 1;
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.ward6::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+.ward6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ward6 h3 {
+    position: absolute;
+    bottom: 120px;
+    left: 150px;
+    color: white;
+}
+.ward6 h5 {
+    position: absolute;
+    color: white;
+    bottom: 55px;
+    left: 110px;
+    text-align: center;
+    font-size: 25px;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,1);
+    opacity: 0;
+    transition: 0.3s;
+}
+.ward6:hover .overlay {
+    opacity: 1;
+}
+    /*this is for mckenzie ward*/
+.ward7 {
+    flex: 1;
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.ward7::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+.ward7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ward7 h3 {
+    position: absolute;
+    bottom: 120px;
+    left: 100px;
+    color: white;
+}
+.ward7 h5 {
+    position: absolute;
+    color: white;
+    bottom: 55px;
+    left: 110px;
+    text-align: center;
+    font-size: 25px;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,1);
+    opacity: 0;
+    transition: 0.3s;
+}
+.ward7:hover .overlay {
+    opacity: 1;
+}
+    /*this style embeded google map*/
+.mapheader {
+    font-size: 50px;
+    color: cornflowerblue;
+    text-align: center;
+    font-weight: bold;
+}
+.map {
+    margin: 30px;
+    padding: 30px;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+.map iframe {
+    padding-left: 50px;
+    border-radius: 5px;
+}
+    /*this styles the classes*/
+.class {
+    width: 40%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+.classes h1 {
+    text-align: center;
+    font-size: 50px;
+    color: cornflowerblue;
+}
+.primary,
+.youth,
+.ysa,
+.rs,
+.eq {
+    width: 100%;
+    box-sizing: border-box;
+}
+    /*this is for the primary class*/
+.primary {
+    width: 500px;
+    height: 350px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    Padding: 10px;
+    margin-bottom: 20px;
+}
+.primary h2 {
+    text-align: center;
+}
+.primary p {
+    text-align: center;
+}
+.primary img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+    /*this is for the youth class*/
+.youth {
+    width: 500px;
+    height: 350px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    Padding: 10px;
+    margin-bottom: 20px;
+}
+.youth h2 {
+    text-align: center;
+}
+.youth p {
+    text-align: center;
+}
+.youth img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+    /*this is for the ysa class*/
+.ysa {
+    width: 500px;
+    height: 350px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    Padding: 10px;
+    margin-bottom: 20px;
+}
+.ysa h2 {
+    text-align: center;
+}
+.ysa p {
+    text-align: center;
+}
+.ysa img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+    /*this is for the relief society class*/
+.rs {
+    width: 500px;
+    height: 350px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    Padding: 10px;
+    margin-bottom: 20px;
+}
+.rs h2 {
+    text-align: center;
+}
+.rs p {
+    text-align: center;
+}
+.rs img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+@media (max-width: 700px) {
+    .class {
+        grid-template-columns: 1fr;
+    }
+}
+    /*this is for the elders quorum class*/
+.eq {
+    width: 500px;
+    height: 350px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    Padding: 10px;
+    margin-bottom: 20px;
+}
+.eq h2 {
+    text-align: center;
+}
+.eq p {
+    text-align: center;
+}
+.eq img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+    /*moves last box to middle of page so aligns in middle of collumns*/
+.class .eq {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*these styles will be for the about page*/
+    /*this is the header*/
+.header2 {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.header2 img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.header_text2 {
+    position: absolute;
+    bottom: 1px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav + h2 {
+    font-size: 50px;
+    color: cornflowerblue;
+    text-align: center;
+}
+    /*this is the first header*/
+br + h2 {
+    text-align: center;
+}
+    /*this is for the body and most of the texts for this page*/
+.intro p{
+    text-align: center;
+}
+.intro h3 {
+    text-align: center;
+}
+    /*this is for the photo gallery*/
+* {
+  box-sizing: border-box;
+}
+.gallerycontainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.photos {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.photos img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*these styles will be for the contact page*/
+    /*this is the header*/
+.header3 {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.header3 img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.header_text3 {
+    position: absolute;
+    bottom: 1px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav + h3 {
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 50px;
+}
+    /*this is the parent of all the contact elements*/
+.contactcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+    /*this is the contact info*/
+.contactus {
+    background-color: gainsboro;
+    height: 350px;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 700px;
+    height: 470px;
+    box-sizing: border-box;
+
+    flex: 1 1 400px;
+}
+.contactus h2 {
+    font-size: 50px;
+    color: cornflowerblue;
+}
+.contactus label {
+    font-weight: bold;
+}
+    /*this is the contact form*/
+.contactform {
+    background-color: gainsboro;
+    height: 470px;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+
+    max-width: 400px;
+    right: 0;
+
+    flex: 1 1 400px;
+}
+.contactform label {
+    color: black;
+    font-weight: bold;
+}
+.contactform input {
+    border: 2px solid gainsboro;
+    border-bottom: 2px solid cornflowerblue;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contactform textarea {
+    border: 2px solid gainsboro;
+    border-bottom: 2px solid cornflowerblue;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    width: 100%;
+    box-sizing: border-box;
+}
+    /*button sends message to my website email*/
+.contactform button {
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.contactform button:hover {
+    color: cornflowerblue;
+}
+.bom img {
+    width: 92%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*these styles will be for the members page*/
+    /*this is the header*/
+.header4 {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.header4 img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.header_text4 {
+    position: absolute;
+    bottom: 1px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav + p {
+    text-align: center;
+    font-style: italic;
+}
+p + h1 {
+    text-align: center;
+    font-size: 50px;
+    color:cornflowerblue
+}
+h1 + h1 {
+    text-align: center;
+    font-size: 50px;
+    color:cornflowerblue
+}
+    /*for the testimonies container*/
+.testimonies {
+    background-color: gainsboro;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+}
+.member1 {
+    text-align: center;
+    size: 30px;
+}
+.testimony1 {
+    text-align: center;
+    size: 10px;
+}
+.member2 {
+    text-align: center;
+    size: 30px;
+}
+.testimony2 {
+    text-align: center;
+    size: 10px;
+}
